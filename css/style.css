@@ -1,0 +1,217 @@
+:root {
+  --Blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+
+  --font-family: "Libre Franklin", sans-serif;
+  --font-size: 20px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+}
+
+.container {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3rem 1.1rem 1rem;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro h1 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--Gray);
+  margin-bottom: 1.2rem;
+}
+
+.intro h1 span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.intro p {
+  font-size: 0.9rem;
+  color: var(--Very-Dark-Blue);
+}
+
+form {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+form .form-inputs input {
+  display: block;
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 3rem;
+  outline: none;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+form .form-inputs input[type="button"] {
+  background-color: var(--Blue);
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 3px 2px 17px -6px #7093ec, -3px -2px 17px -6px #7093ec;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form .form-inputs input[type="button"]:hover {
+  opacity: 0.8;
+}
+
+.error {
+  margin-bottom: 2.5rem;
+  color: var(--Light-Red);
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
+.dashboard img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.socialmedia {
+  list-style: none;
+  margin: 5rem auto 0;
+}
+
+.socialmedia li {
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.socialmedia li .fa-facebook-f {
+  padding: 0 0.1rem;
+}
+
+.socialmedia li a {
+  color: var(--Blue);
+  font-size: 0.7rem;
+  border: 1px solid var(--Pale-Blue);
+  padding: 0.4rem 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.socialmedia li a:hover {
+  background-color: var(--Blue);
+  border-color: var(--Blue);
+  color: #fff;
+}
+
+footer .copyrights {
+  font-size: 0.7rem;
+  color: var(--Gray);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .intro h1 span {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Blue);
+  }
+
+  .intro p {
+    font-size: 1.5rem;
+  }
+
+  .form-inputs {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  form .form-inputs input {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.1rem;
+  }
+
+  .form-inputs :first-child {
+    /* display: block; */
+    flex-basis: 72%;
+  }
+
+  .form-inputs :nth-child(2) {
+    flex-basis: 25%;
+  }
+
+  .error {
+    margin-bottom: 0;
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  footer .copyrights {
+    font-size: 1rem;
+  }
+}
