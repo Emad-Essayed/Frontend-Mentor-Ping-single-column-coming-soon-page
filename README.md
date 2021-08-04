@@ -17,6 +17,7 @@ This is a solution to the [Ping single column coming soon page challenge on Fron
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Javascript
 
 ## Author
 
